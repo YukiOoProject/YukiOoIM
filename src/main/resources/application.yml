@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+# Spring Boot application properties
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  thymeleaf:
+    prefix: classpath:/templates/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/YukiOoIMDB
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update # 自动创建/更新数据库表
+    show-sql: true # 显示SQL查询语句
