@@ -1,4 +1,4 @@
-package ink.wanderer.yukiooim.config;
+package ink.wanderer.yukiooim.controller;
 
 import ink.wanderer.yukiooim.entity.User;
 import jakarta.servlet.http.HttpSession;

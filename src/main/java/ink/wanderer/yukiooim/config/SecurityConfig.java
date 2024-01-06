@@ -28,6 +28,7 @@ public class SecurityConfig {
                         .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
                         .requestMatchers("/api/login", "/api/register").permitAll()
                         .requestMatchers("/web/login").permitAll()
+                        .requestMatchers("/chat").authenticated()
                         .anyRequest().authenticated()
                 )
                 .formLogin(login -> login
